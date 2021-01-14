@@ -10,7 +10,7 @@ The class will be using Chrome as the preferred browser. Through Pop!_OS there a
 
 ### Method 1, the Prefered Way, go to Chrome
 
-Open up Firefox, go to [Chrome's Official Website](https://www.google.com/chrome/), click on 'Download Chrome,' and get the **64 bit .deb (for Debian/Ubuntu)** package. Debian/Ubuntu make this really easy you navigate to where the package was downloaded to, double click on the package, and click 'Install' in Eddy!
+Open up Firefox, go to [Chrome's Official Website](https://www.google.com/chrome/), click on 'Download Chrome,' and get the **64 bit .deb (for Debian/Ubuntu)** package. Debian/Ubuntu make this really easy. You navigate to where the package was downloaded to, double click on the package, and click 'Install' in Eddy!
 
 ### Method 2, the Command Line 
 
