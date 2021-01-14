@@ -4,64 +4,89 @@
 
 At the time of writing this, I made it through my entire bootcamp using the Pop!_OS distrubtion of Linux without any major hiccups. In fact, it was my *first time ever* using Linux! Using Pop!_OS is  **highly recommend** for new users,  however we also recommend seasoned veterans use Pop!_OS  **to maintain consistency across Linux users for debugging**. Using other environments can lead to unstable behavior and limit our ability to help you debug.
 
-If you have some strong aversion to an OS named Pop!_OS because it's not professional enough, then I would strongly recommend the distribution Pop! is built off, and one of the most ubiquitous distributions: Ubuntu. Just know that at the time of writing I am using Pop!_OS. 
+If you have some strong aversion to an OS named Pop!_OS because it's not professional enough, then I would strongly recommend the distribution Pop! is built off, and one of the most ubiquitous distributions: Ubuntu. Just know that at the time of writing I am using Pop!_OS.
 
-## Your Development Environment
+## Operating System & Command Line Tools
 
-If you check out [this](./environment-setup/README.md) I put an indepth write up about how I set up my environment for my cohort.
+You've probably read Pop!_OS ad nauseam by now, but it's the distribution that I'm the most familiar with and it is so similar to Ubuntu that anything done on Pop can be done on Ubuntu. That being said, a lot of this is written assuming you're using Pop.
 
-## Text Editor
+So, before we get started we're going to do a simple:
 
-Our class will begin the course with [Visual Studio Code](../mac-dev-tools/editor-vsc.md) as our preferred text editor. I tried to be cool and played around with some other ones (Atom, Sublime, ECMAS, and VIM), but VSCode is just so simple and has lots of support. And I totally get it, shilling for a MSFT product on Linux sounds weird, but trust me, it works. 
+``sudo apt update && sudo apt upgrade``
 
-## Browser
+To make sure all our packages are up to date. By the way, if you're a first time Linux user congratulations on chaining your first commands!
 
-The class will be using Chrome as the preferred browser. Through Pop!_OS there are two ways to get this browser.
 
-### Method 1, the Prefered Way, go to Chrome
+### Install Command Line Tools from the Terminal
 
-Open up Firefox, go to [Chrome's Official Website](https://www.google.com/chrome/), click on 'Download Chrome,' and get the **64 bit .deb (for Debian/Ubuntu)** package. Debian/Ubuntu make this really easy you navigate to where the package was downloaded to, double click on the package, and click 'Install' in Eddy!
+While bash is loved by all and amazing most of your cohort will be using Zsh (Zshell). I recommend using Zsh because it's customizable (below) and offers tab completion which can be a time saver when navigating through files!
 
-### Method 2, the Command Line 
+To install Zsh we're going to enter:
 
-Open up your command line (Super + T) and copy (ctrl + c) the following and paste it (ctrl + shift + v) it into the command line.
+``sudo apt install zsh``
 
-``wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb``
+Alright, cool! Now, to make sure it's been installed correctly we're going to run the following in terminal:
 
-After fetching the .deb file, using dpkg command to install it. 
+``zsh``
 
-``sudo dpkg -i google-chrome-stable_current_amd64.deb``
+If you are not greeted with a 'zsh-newuser-install' that walks you through some basic Zsh configuration you may need to invoke it manually:
 
-You are also going to want to install the [JSON View](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) extension.
+``zsh /usr/share/zsh/functions/Newuser/zsh-newuser-install -f``
 
-## Postman
+**Note**: Terminal size might need to be at least 72*15 or *zsh-newuser-install* may not run.
 
-Postman is tricky because in their documentation they want you to use a command called 'snap,' and I get it, you've probably heard sudo is the magic word to get anything you want from Linux. I'm going to tell you straight off the bat don't do what I did and try to install it manually by yourself. Why? Well, beyond installing it to the wrong folder and creating a fatal error you could do what I did and accidentally install it in your download folder. Everytime I wanted to use Postman I would have to navigate to Downloads -> Postman -> launch the exe. So let's just use Snap!
+Finally, to make Zsh our default shell we're going to enter:
 
-First, we're going to run the following command...
+``chsh -s /bin/zsh``
 
-``sudo apt update``
+You may have to log out and back in, but then you should be in Zsh!
 
-It's always good practice to update first, and then...
+More in depth writeups can be found here:
 
-``sudo apt install snapd``
+[Installing Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) from Oh-My-Zsh
+[Zsh](https://pop-planet.info/wiki/index.php?title=Zsh) from Pop!_Planet
 
-Now that we have that, it's as simple as:
+## Customization
 
-``snap install postman``
+### Styles (Optional)
 
-## Keyboard Shortcuts
+Here comes the fun part: Oh-My-Zsh. Oh-My-Zsh is "A delightful community driven framework for manging your zsh config." This is a lot of words for: Make your shell look awesome. 
 
-Where would I be without ``super + tab``, ``super + t``, or any of the VSCode keyboard shortcuts? Well, still here, just a lot slower. Developers *love* keyboard shortcuts, the more keyboard shortcuts you know the faster you can code!
+[Here's](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) an exhaustive list of themes. The default shell is going to be robbyrussel. A very popular one is agnoster. I personally use [powerlevel10k](https://github.com/romkatv/powerlevel10k).
 
-[Here](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) helpful Linux keyboard shortcuts for Visual Studio Code, with one added addition: ``ctrl + shift + alt + arrow up/arrow down`` will copy an entire line and duplicate it below. 
 
-When you have some time, check out the [Keyboard Shortcuts](https://support.system76.com/articles/pop-keyboard-shortcuts/) for Pop!_OS. 
+## Git
 
-You can also see the picture below as to how to customize your keyboard shortcuts, or turn off any that you might accidentally hit and don't want to.
+You should already have git installed and have an account on GitHub from Fundamentals. If not, sign up for an account on github.com. We'll be using GitHub to track code changes and collaborate on projects.
 
-![PopKeyboardShortcuts](../assets/popkeyboardshortcuts.png)
 
-## That's it!
+### Confirm Install
 
-![You did it!](https://media.giphy.com/media/3otPoS81loriI9sO8o/giphy.gif)
+To check if we have git enter ``which git`` into your terminal. The output should be a directory path like ``/usr/bin/git``. If you do not see this, git is not installed on your machine. Go [here](https://github.com/git-guides/install-git), scroll down to Linux, follow the Debian/Ubuntu instructions.
+
+### Configure Git
+
+Configuring your git settings will help GitHub track your contributions and to make it easier and smoother to commit changes.
+
+1. Use the following three `git config` commands to configure your git user information and have git "cache" (remember) it. We use the `--global` (or `-g`) option to make the configuration apply to all repositories.
+
+<p align="center">
+<img src='../assets/gitconfig.png' width='600px' alt='git config'>
+</p>
+
+To view your git configurations, you can either run following commands on the terminal
+
+```
+git config --list
+```
+OR
+
+```
+git config user.name
+git config user.email
+```
+
+
+## Next Up
+* [Install Development Tools](../)
+
