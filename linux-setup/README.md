@@ -54,6 +54,8 @@ Now that we have that, it's as simple as:
 
 Where would I be without ``super + tab``, ``super + t``, or any of the VSCode keyboard shortcuts? Well, still here, just a lot slower. Developers *love* keyboard shortcuts, the more keyboard shortcuts you know the faster you can code!
 
+[Here](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) helpful Linux keyboard shortcuts for Visual Studio Code, with one added addition: ``ctrl + shift + alt + arrow up/arrow down`` will copy an entire line and duplicate it below. 
+
 When you have some time, check out the [Keyboard Shortcuts](https://support.system76.com/articles/pop-keyboard-shortcuts/) for Pop!_OS. 
 
 You can also see the picture below as to how to customize your keyboard shortcuts, or turn off any that you might accidentally hit and don't want to.
