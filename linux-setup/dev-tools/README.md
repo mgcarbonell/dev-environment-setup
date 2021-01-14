@@ -1,18 +1,8 @@
-# Installfest for Linux: The Penguin Parade
-
-## The Choices
-
-At the time of writing this, I made it through my entire bootcamp using the Pop!_OS distrubtion of Linux without any major hiccups. In fact, it was my *first time ever* using Linux! Using Pop!_OS is  **highly recommend** for new users,  however we also recommend seasoned veterans use Pop!_OS  **to maintain consistency across Linux users for debugging**. Using other environments can lead to unstable behavior and limit our ability to help you debug.
-
-If you have some strong aversion to an OS named Pop!_OS because it's not professional enough, then I would strongly recommend the distribution Pop! is built off, and one of the most ubiquitous distributions: Ubuntu. Just know that at the time of writing I am using Pop!_OS. 
-
-## Your Development Environment
-
-If you check out [this](./environment-setup/README.md) I put an indepth write up about how I set up my environment for my cohort.
+# Installfest for Linux 2: The Parade Continues
 
 ## Text Editor
 
-Our class will begin the course with [Visual Studio Code](../mac-dev-tools/editor-vsc.md) as our preferred text editor. I tried to be cool and played around with some other ones (Atom, Sublime, ECMAS, and VIM), but VSCode is just so simple and has lots of support. And I totally get it, shilling for a MSFT product on Linux sounds weird, but trust me, it works. 
+Our class will begin the course with [Visual Studio Code](../../mac-dev-tools/editor-vsc.md) as our preferred text editor. I tried to be cool and played around with some other ones (Atom, Sublime, ECMAS, and VIM), but VSCode is just so simple and has lots of support. And I totally get it, shilling for a MSFT product on Linux sounds weird, but trust me, it works. 
 
 ## Browser
 
@@ -60,7 +50,7 @@ When you have some time, check out the [Keyboard Shortcuts](https://support.syst
 
 You can also see the picture below as to how to customize your keyboard shortcuts, or turn off any that you might accidentally hit and don't want to.
 
-![PopKeyboardShortcuts](../assets/popkeyboardshortcuts.png)
+![PopKeyboardShortcuts](../../assets/popkeyshortcuts.png)
 
 ## That's it!
 

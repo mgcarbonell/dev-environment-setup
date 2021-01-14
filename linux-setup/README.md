@@ -8,9 +8,7 @@ If you have some strong aversion to an OS named Pop!_OS because it's not profess
 
 ## Operating System & Command Line Tools
 
-You've probably read Pop!_OS ad nauseam by now, but it's the distribution that I'm the most familiar with and it is so similar to Ubuntu that anything done on Pop can be done on Ubuntu. That being said, a lot of this is written assuming you're using Pop.
-
-So, before we get started we're going to do a simple:
+Before we get started we're going to do a simple:
 
 ``sudo apt update && sudo apt upgrade``
 
@@ -44,6 +42,7 @@ You may have to log out and back in, but then you should be in Zsh!
 More in depth writeups can be found here:
 
 [Installing Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) from Oh-My-Zsh
+
 [Zsh](https://pop-planet.info/wiki/index.php?title=Zsh) from Pop!_Planet
 
 ## Customization
