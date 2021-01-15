@@ -50,8 +50,12 @@ When you have some time, check out the [Keyboard Shortcuts](https://support.syst
 
 You can also see the picture below as to how to customize your keyboard shortcuts, or turn off any that you might accidentally hit and don't want to.
 
-![PopKeyboardShortcuts](../../assets/popkeyshortcuts.png)
+<p align="center">
+<img src='../../assets/popshortcuts.png' width='600px' alt='git config'>
+</p>
 
 ## That's it!
 
 ![You did it!](https://media.giphy.com/media/3otPoS81loriI9sO8o/giphy.gif)
+
+assets/popshortcuts.png
