@@ -87,5 +87,5 @@ git config user.email
 
 
 ## Next Up
-* [Install Development Tools](../dev-tools/README.md)
+* [Install Development Tools](./dev-tools/README.md)
 
